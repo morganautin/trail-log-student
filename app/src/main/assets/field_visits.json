@@ -1,0 +1,50 @@
+[
+  {
+    "trailId": "trail_001",
+    "daysAgo": 14,
+    "type": "DRAINAGE",
+    "conditionScore": 35,
+    "notes": "Rigoles bouchées après les orages, ravinement sur 200 m.",
+    "issues": [
+      { "description": "Rigole n°3 obstruée par des branches", "daysAgo": 14, "status": "OPEN" },
+      { "description": "Ravinement au virage du belvédère", "daysAgo": 14, "status": "OPEN" },
+      { "description": "Buse d'évacuation dégagée", "daysAgo": 14, "status": "RESOLVED" }
+    ]
+  },
+  {
+    "trailId": "trail_002",
+    "daysAgo": 9,
+    "type": "SIGNAGE",
+    "conditionScore": 62,
+    "notes": "Balisage effacé sur la partie haute.",
+    "issues": [
+      { "description": "Panneau directionnel tombé au carrefour", "daysAgo": 9, "status": "OPEN" }
+    ]
+  },
+  {
+    "trailId": "trail_003",
+    "daysAgo": 5,
+    "type": "EROSION",
+    "conditionScore": 48,
+    "notes": "Érosion du talus côté ravin, à surveiller.",
+    "issues": [
+      { "description": "Poser des fascines sur le talus", "daysAgo": 5, "status": "OPEN" }
+    ]
+  },
+  {
+    "trailId": "trail_004",
+    "daysAgo": 2,
+    "type": "HAZARD_CHECK",
+    "conditionScore": 81,
+    "notes": "Contrôle saisonnier : aucun arbre dangereux.",
+    "issues": []
+  },
+  {
+    "trailId": "trail_005",
+    "daysAgo": 1,
+    "type": "INSPECTION",
+    "conditionScore": 90,
+    "notes": "Sentier en très bon état.",
+    "issues": []
+  }
+]

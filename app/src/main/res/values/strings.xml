@@ -45,4 +45,60 @@
     <string name="difficulty_easy">Easy</string>
     <string name="difficulty_moderate">Moderate</string>
     <string name="difficulty_hard">Hard</string>
+
+    <!-- ===== Projet final : carnet de visites (Ridgeway Field Services) ===== -->
+    <string name="visits_title">Maintenance visits</string>
+    <string name="visits_loading">Loading visits</string>
+    <string name="visits_empty">No maintenance visit yet. Tap + to record one.</string>
+    <string name="visits_load_error">Could not load visits. Restart the app.</string>
+    <string name="add_visit">Record a new visit</string>
+    <string name="new_visit">New visit</string>
+    <string name="edit_visit">Edit visit</string>
+    <string name="visit_missing">Visit not found</string>
+    <string name="visit_trail">Trail</string>
+    <string name="visit_no_trails">No trail available: import trails first.</string>
+    <string name="visit_type">Visit type</string>
+    <string name="visit_condition">Condition score (0–100)</string>
+    <string name="visit_invalid">Choose a trail and a score between 0 and 100</string>
+    <string name="visit_type_inspection">Inspection</string>
+    <string name="visit_type_signage">Signage</string>
+    <string name="visit_type_drainage">Drainage</string>
+    <string name="visit_type_erosion">Erosion mitigation</string>
+    <string name="visit_type_hazard">Seasonal hazard check</string>
+    <string name="visit_item_a11y">%1$s, visited on %2$s, %3$s, %4$s, condition %5$d out of 100. Double tap to open.</string>
+    <string name="open_issues_none">No open issue</string>
+    <plurals name="open_issues">
+        <item quantity="one">%d open issue</item>
+        <item quantity="other">%d open issues</item>
+    </plurals>
+    <string name="condition_good">good</string>
+    <string name="condition_fair">fair</string>
+    <string name="condition_poor">poor</string>
+    <string name="condition_label">Condition: %1$d/100 (%2$s)</string>
+    <string name="condition_a11y">Trail condition: %1$d out of 100, %2$s</string>
+    <string name="issues_empty">No issue recorded for this visit.</string>
+    <string name="new_issue_hint">Describe a new issue</string>
+    <string name="add_issue">Add issue</string>
+    <string name="issue_empty_error">Enter a description</string>
+    <string name="issue_added">Issue added</string>
+    <string name="issue_opened_on">Opened on %s</string>
+    <string name="issue_a11y_open">%s, open. Check to mark as resolved.</string>
+    <string name="issue_a11y_resolved">%s, resolved. Uncheck to reopen.</string>
+    <string name="visit_sort_title">Visit list order</string>
+    <string name="visit_sort_newest">Newest visits first</string>
+    <string name="visit_sort_oldest">Oldest visits first</string>
+    <string name="followup_days_title">Follow-up delay</string>
+    <string name="followup_days_help">An open issue becomes overdue after this delay.</string>
+    <string name="followup_days_0">Immediately (0 days)</string>
+    <string name="followup_days_3">3 days</string>
+    <string name="followup_days_7">7 days</string>
+    <string name="followup_channel">Overdue follow-ups</string>
+    <string name="followup_title">Overdue follow-ups</string>
+    <plurals name="followup_text">
+        <item quantity="one">%1$d issue has been open for at least %2$d days.</item>
+        <item quantity="other">%1$d issues have been open for at least %2$d days.</item>
+    </plurals>
+    <string name="followup_check_now">Check follow-ups now</string>
+    <string name="followup_check_started">Follow-up check started</string>
+    <string name="followup_permission_denied">Notifications are disabled: overdue follow-ups will not be shown.</string>
 </resources>

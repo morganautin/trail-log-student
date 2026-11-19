@@ -4,6 +4,10 @@
         <activity android:name=".ui.EditTrailActivity" android:exported="false" android:parentActivityName=".ui.MainActivity"/>
         <activity android:name=".ui.SettingsActivity" android:exported="false" android:parentActivityName=".ui.MainActivity"/>
         <activity android:name=".ui.TrailDetailActivity" android:exported="false" android:parentActivityName=".ui.MainActivity"/>
+        <!-- Projet final : carnet de visites d'entretien -->
+        <activity android:name=".ui.visits.VisitListActivity" android:exported="false" android:parentActivityName=".ui.MainActivity"/>
+        <activity android:name=".ui.visits.VisitDetailActivity" android:exported="false" android:parentActivityName=".ui.visits.VisitListActivity"/>
+        <activity android:name=".ui.visits.EditVisitActivity" android:exported="false" android:parentActivityName=".ui.visits.VisitListActivity"/>
         <activity android:name=".ui.MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

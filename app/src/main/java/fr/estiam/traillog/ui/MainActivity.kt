@@ -19,6 +19,7 @@ import fr.estiam.traillog.R
 import fr.estiam.traillog.TrailLogApplication
 import fr.estiam.traillog.databinding.ActivityMainBinding
 import fr.estiam.traillog.model.TrailSortOrder
+import fr.estiam.traillog.ui.visits.VisitListActivity
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
@@ -43,6 +44,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.drawer_all -> { vm.showFavorites(false); supportActionBar?.title = getString(R.string.all_trails) }
                 R.id.drawer_favorites -> { vm.showFavorites(true); supportActionBar?.title = getString(R.string.favorites) }
                 R.id.drawer_settings -> startActivity(Intent(this, SettingsActivity::class.java))
+                // Projet final : accès au carnet de visites d'entretien
+                R.id.drawer_visits -> startActivity(Intent(this, VisitListActivity::class.java))
             }
             item.isChecked = true; b.drawerLayout.closeDrawer(GravityCompat.START); true
         }

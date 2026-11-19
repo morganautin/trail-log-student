@@ -3,4 +3,8 @@
         <attr name="curveColor" format="color"/>
         <attr name="curveStrokeWidth" format="dimension"/>
     </declare-styleable>
+    <!-- Projet final : note affichée par défaut par l'indicateur d'état -->
+    <declare-styleable name="ConditionIndicatorView">
+        <attr name="conditionScore" format="integer"/>
+    </declare-styleable>
 </resources>

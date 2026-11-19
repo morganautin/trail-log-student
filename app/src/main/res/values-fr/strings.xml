@@ -45,4 +45,60 @@
     <string name="difficulty_easy">Facile</string>
     <string name="difficulty_moderate">Moyenne</string>
     <string name="difficulty_hard">Difficile</string>
+
+    <!-- ===== Projet final : carnet de visites (Ridgeway Field Services) ===== -->
+    <string name="visits_title">Visites d’entretien</string>
+    <string name="visits_loading">Chargement des visites</string>
+    <string name="visits_empty">Aucune visite d’entretien. Appuyez sur + pour en enregistrer une.</string>
+    <string name="visits_load_error">Impossible de charger les visites. Relancez l’application.</string>
+    <string name="add_visit">Enregistrer une nouvelle visite</string>
+    <string name="new_visit">Nouvelle visite</string>
+    <string name="edit_visit">Modifier la visite</string>
+    <string name="visit_missing">Visite introuvable</string>
+    <string name="visit_trail">Sentier</string>
+    <string name="visit_no_trails">Aucun sentier disponible : importez d’abord les sentiers.</string>
+    <string name="visit_type">Type de visite</string>
+    <string name="visit_condition">Note d’état (0 à 100)</string>
+    <string name="visit_invalid">Choisissez un sentier et une note entre 0 et 100</string>
+    <string name="visit_type_inspection">Inspection</string>
+    <string name="visit_type_signage">Signalétique</string>
+    <string name="visit_type_drainage">Drainage</string>
+    <string name="visit_type_erosion">Lutte contre l’érosion</string>
+    <string name="visit_type_hazard">Contrôle des dangers saisonniers</string>
+    <string name="visit_item_a11y">%1$s, visité le %2$s, %3$s, %4$s, état %5$d sur 100. Appuyez deux fois pour ouvrir.</string>
+    <string name="open_issues_none">Aucun problème ouvert</string>
+    <plurals name="open_issues">
+        <item quantity="one">%d problème ouvert</item>
+        <item quantity="other">%d problèmes ouverts</item>
+    </plurals>
+    <string name="condition_good">bon</string>
+    <string name="condition_fair">moyen</string>
+    <string name="condition_poor">mauvais</string>
+    <string name="condition_label">État : %1$d/100 (%2$s)</string>
+    <string name="condition_a11y">État du sentier : %1$d sur 100, %2$s</string>
+    <string name="issues_empty">Aucun problème relevé pour cette visite.</string>
+    <string name="new_issue_hint">Décrire un nouveau problème</string>
+    <string name="add_issue">Ajouter le problème</string>
+    <string name="issue_empty_error">Saisissez une description</string>
+    <string name="issue_added">Problème ajouté</string>
+    <string name="issue_opened_on">Ouvert le %s</string>
+    <string name="issue_a11y_open">%s, ouvert. Cochez pour le marquer comme résolu.</string>
+    <string name="issue_a11y_resolved">%s, résolu. Décochez pour le rouvrir.</string>
+    <string name="visit_sort_title">Ordre de la liste des visites</string>
+    <string name="visit_sort_newest">Visites les plus récentes d’abord</string>
+    <string name="visit_sort_oldest">Visites les plus anciennes d’abord</string>
+    <string name="followup_days_title">Délai de relance</string>
+    <string name="followup_days_help">Un problème ouvert est en retard après ce délai.</string>
+    <string name="followup_days_0">Immédiatement (0 jour)</string>
+    <string name="followup_days_3">3 jours</string>
+    <string name="followup_days_7">7 jours</string>
+    <string name="followup_channel">Relances en retard</string>
+    <string name="followup_title">Relances en retard</string>
+    <plurals name="followup_text">
+        <item quantity="one">%1$d problème est ouvert depuis au moins %2$d jours.</item>
+        <item quantity="other">%1$d problèmes sont ouverts depuis au moins %2$d jours.</item>
+    </plurals>
+    <string name="followup_check_now">Vérifier les relances maintenant</string>
+    <string name="followup_check_started">Vérification des relances lancée</string>
+    <string name="followup_permission_denied">Notifications désactivées : les relances en retard ne seront pas affichées.</string>
 </resources>
