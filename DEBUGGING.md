@@ -37,3 +37,13 @@ Dans Android Studio : onglet **Logcat**, filtre `tag:OverdueFollowUp | tag:Visit
 **Vérification :** après mise à jour de l'app sur l'émulateur (qui contenait déjà la base v1), les sentiers modifiés pendant les labs sont toujours présents et les visites de démonstration apparaissent.
 
 > Si d'autres erreurs apparaissent pendant la compilation ou les tests, ajoute-les ici avec l'erreur (Logcat ou Build), la cause trouvée et la correction : ce sont d'excellents artefacts.
+
+## Artefact 4 – Erreur de compilation du test Espresso (réellement rencontrée)
+
+**Symptôme :** `.\gradlew.bat :app:connectedDebugAndroidTest` échoue à la tâche `:app:compileDebugAndroidTestKotlin` avec 7 erreurs dans `VisitFlowEspressoTest.kt` : « Return type mismatch: expected 'Boolean', actual 'Unit' », « Syntax error: Unexpected token » et « Unresolved reference 'activity' » (ligne 89).
+
+**Diagnostic :** dans la condition d'attente, la ligne `val activity = resumedActivity() as? VisitDetailActivity` était suivie d'une ligne commençant par `!activity?...`. Le compilateur Kotlin rattache le `!` à l'expression précédente au lieu d'ouvrir une nouvelle expression. La variable `activity` devient alors invalide et le lambda ne renvoie plus de `Boolean`.
+
+**Correction :** chaque étape est écrite dans une variable typée explicitement (`val activity: VisitDetailActivity? = (... as? ...)`, puis `val title: CharSequence? = ...`). La dernière ligne du lambda est une comparaison sans `!` en tête (`title != null && title.isNotBlank()`).
+
+**Vérification :** la compilation des tests instrumentés passe (à confirmer par la capture du résultat de `connectedDebugAndroidTest`).

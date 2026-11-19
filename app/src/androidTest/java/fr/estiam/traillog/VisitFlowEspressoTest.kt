@@ -85,8 +85,10 @@ class VisitFlowEspressoTest {
 
         // Assert : l'écran de détail est chargé (nom du sentier affiché)…
         awaitCondition("détail chargé") {
-            val activity = resumedActivity() as? VisitDetailActivity
-            !activity?.findViewById<TextView>(R.id.visitDetailTrail)?.text.isNullOrBlank()
+            // Le titre (nom du sentier) n'est rempli qu'une fois la visite lue dans Room
+            val activity: VisitDetailActivity? = (resumedActivity() as? VisitDetailActivity)
+            val title: CharSequence? = activity?.findViewById<TextView>(R.id.visitDetailTrail)?.text
+            title != null && title.isNotBlank()
         }
         onView(withId(R.id.visitDetailTrail)).check(matches(isDisplayed()))
         // …avec la vue personnalisée visible et une description accessible renseignée
@@ -113,8 +115,9 @@ class VisitFlowEspressoTest {
 
         // Assert : après l'enregistrement Room, le détail de la NOUVELLE visite s'ouvre avec nos notes
         awaitCondition("détail de la visite créée") {
-            val activity = resumedActivity() as? VisitDetailActivity
-            activity?.findViewById<TextView>(R.id.visitDetailNotes)?.text?.toString() == uniqueNotes
+            val activity: VisitDetailActivity? = (resumedActivity() as? VisitDetailActivity)
+            val notes: String? = activity?.findViewById<TextView>(R.id.visitDetailNotes)?.text?.toString()
+            notes == uniqueNotes
         }
         onView(withId(R.id.visitDetailNotes)).check(matches(withText(uniqueNotes)))
         onView(withId(R.id.conditionIndicator)).check(matches(isDisplayed()))
