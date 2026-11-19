@@ -50,7 +50,7 @@ class ConditionIndicatorView @JvmOverloads constructor(
         isFocusable = true
         importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_YES
         // Annonce automatique par TalkBack quand la description change
-        ViewCompat.setAccessibilityLiveRegion(this, ViewCompat.ACCESSIBILITY_LIVE_REGION_POLITE)
+        accessibilityLiveRegion = View.ACCESSIBILITY_LIVE_REGION_POLITE
         setScore(initial)
     }
 
